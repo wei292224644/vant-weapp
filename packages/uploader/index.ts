@@ -1,7 +1,7 @@
 import { VantComponent } from '../common/component';
-import { isImageFile, chooseFile, isVideoFile, File } from './utils';
-import { imageProps, videoProps, mediaProps, messageFileProps } from './shared';
 import { isBoolean, isPromise } from '../common/validator';
+import { imageProps, mediaProps, messageFileProps, videoProps } from './shared';
+import { chooseFile, File, isImageFile, isVideoFile } from './utils';
 
 VantComponent({
   props: {

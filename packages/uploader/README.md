@@ -248,6 +248,7 @@ uploadFilePromise(fileName, chooseResult) {
 | extension `v1.10.11` | 当 accept 为 `file` 时生效，根据文件拓展名过滤可选择文件。每一项都不能是空字符串。默认不过滤 | _string[] \| undefined_ | - |
 | showmenu `v1.10.13` | 预览图片时，是否显示长按菜单 | _boolean_ | `true` |
 | upload-icon | 上传区域图标，可选值见 [Icon 组件](#/icon) | _string_ | `plus` |
+| referrer-policy `v1.11.6` | 当 accept 为 video 时生效，具体用法参考 [微信官方 - 媒体组件 / video](https://developers.weixin.qq.com/miniprogram/dev/component/video.html) | string | `no-referrer` |
 
 #### accept 的合法值
 
