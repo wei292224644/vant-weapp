@@ -1,5 +1,23 @@
 # 更新日志
 
+### [v1.11.6](https://github.com/youzan/vant-weapp/compare/v1.11.5...v1.11.6)
+
+`2024-05-14`
+
+**Bug Fixes**
+
+- Cascader: 修复显示错误在 value 值清空的情况下 [#5760](https://github.com/youzan/vant-weapp/issues/5760)
+- Field: 修复清除按钮显示错误在 value 默认有值的情况下 [#5792](https://github.com/youzan/vant-weapp/issues/5792)
+
+**Document**
+
+- Button: 补全 hover-class 属性 [ebba3b](https://github.com/youzan/vant-weapp/commit/ebba3b14a133769e7b04b7a48667cbc777c280c4)
+- Stepper: 修复 onChange 事件示例代码错误 [#5778](https://github.com/youzan/vant-weapp/issues/5778)
+
+**Feature**
+
+- Uploader: 新增 referrer-policy 属性支持 [#5770](https://github.com/youzan/vant-weapp/issues/5770)
+
 ### [v1.11.5](https://github.com/youzan/vant-weapp/compare/v1.11.4...v1.11.5)
 
 `2024-04-15`
@@ -7,7 +25,7 @@
 **Bug Fixes**
 
 - Transition: 修复 observeDuration 方法未实现导致的报错 [#5743](https://github.com/youzan/vant-weapp/issues/5743)
-- van-stepper:  修复在设置 max 属性后 onChange 结果不受限制 [#5741](https://github.com/youzan/vant-weapp/issues/5741)
+- van-stepper: 修复在设置 max 属性后 onChange 结果不受限制 [#5741](https://github.com/youzan/vant-weapp/issues/5741)
 
 **Feature**
 
@@ -17,7 +35,6 @@
 
 - docs(quickstart): 删除不需要的引导步骤 [#5744](https://github.com/youzan/vant-weapp/pull/5744)
 
-
 ### [v1.11.4](https://github.com/youzan/vant-weapp/compare/v1.11.3...v1.11.4)
 
 `2024-01-22`
@@ -25,7 +42,6 @@
 **Bug Fixes**
 
 - Transition: 修复 popup 在特定情况下无法关闭 [#5707](https://github.com/youzan/vant-weapp/issues/5707)
-
 
 ### [v1.11.3](https://github.com/youzan/vant-weapp/compare/v1.11.2...v1.11.3)
 
@@ -36,13 +52,11 @@
 - Cascader: 修复 title slot 不生效 [#5676](https://github.com/youzan/vant-weapp/issues/5676)
 - Transition: 修复 transition 多次触发 enter 时异常 [#5699](https://github.com/youzan/vant-weapp/issues/5699)
 
-
 **Feature**
 
 - Calendar、ActionSheet、Dialog、ShareSheet: 增加 root-portal 属性支持 [#5680](https://github.com/youzan/vant-weapp/issues/5680)
 - goods-action-button: 增加 custom-style 属性支持 [#5659](https://github.com/youzan/vant-weapp/issues/5659)
 - Upload: 增加 mix mediaType 支持 [#5690](https://github.com/youzan/vant-weapp/issues/5690)
-
 
 ### [v1.11.2](https://github.com/youzan/vant-weapp/compare/v1.11.1...v1.11.2)
 
@@ -54,11 +68,9 @@
 - upload: 修复企业微信下图片无法上传 [#5581](https://github.com/youzan/vant-weapp/issues/5581)
 - calendar/input/textarea/popup: 修复 skyline 模式下组件报错问题 [#5650](https://github.com/youzan/vant-weapp/issues/5650)
 
-
 **Document**
 
 - area: 订正 columns-num 只支持 number 类型. [#5631](https://github.com/youzan/vant-weapp/issues/5631)
-
 
 ### [v1.11.1](https://github.com/youzan/vant-weapp/compare/v1.11.0...v1.11.1)
 
@@ -67,7 +79,6 @@
 **Feature**
 
 - icon: update @vant/icon to v3.0.1 [#5583](https://github.com/youzan/vant-weapp/issues/5583)
-
 
 ### [v1.11.0](https://github.com/youzan/vant-weapp/compare/v1.10.25...v1.11.0)
 
@@ -85,7 +96,6 @@
 **Feature**
 
 - icon: 升级 @vant/icon 到 [3.0.0](https://github.com/youzan/vant/blob/main/packages/vant-icons/CHANGELOG.md) [#5561](https://github.com/youzan/vant-weapp/issues/5561)
-
 
 ### [v1.10.25](https://github.com/youzan/vant-weapp/compare/v1.10.24...v1.10.25)
 
