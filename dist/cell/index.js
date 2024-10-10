@@ -1,5 +1,6 @@
 import { link } from '../mixins/link';
 import { VantComponent } from '../common/component';
+import { useParent } from '../common/relation';
 VantComponent({
     classes: [
         'title-class',
@@ -8,6 +9,7 @@ VantComponent({
         'right-icon-class',
         'hover-class',
     ],
+    relation: useParent('cell-group'),
     mixins: [link],
     props: {
         title: null,
@@ -28,6 +30,13 @@ VantComponent({
             value: true,
         },
         titleStyle: String,
+        listenLast: {
+            type: Boolean,
+            value: true
+        }
+    },
+    data: {
+        isLast: false,
     },
     methods: {
         onClick(event) {

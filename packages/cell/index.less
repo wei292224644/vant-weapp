@@ -14,7 +14,10 @@
   background-color: var(--cell-background-color, @cell-background-color);
 
   &::after {
-    .hairline-bottom(@border-color, @padding-md, @padding-md);
+    .hairline-bottom(var(--cell-divide-color, @border-color), 
+    var(--cell-divide-padding, @padding-md), 
+    var(--cell-divide-padding, @padding-md)
+    );
   }
 
   &--borderless::after {
@@ -81,13 +84,16 @@
   &--required {
     overflow: visible;
 
-    &::before {
-      position: absolute;
-      content: '*';
-      left: var(--padding-xs, @padding-xs);
-      font-size: var(--cell-font-size, @cell-font-size);
-      color: var(--cell-required-color, @cell-required-color);
-    }
+    // & > .van-cell__title {
+    //   & > .van-cell__title_text {
+    //     &::after {
+    //       content: '*';
+    //       padding-left: var(--padding-xs, @padding-base);
+    //       font-size: var(--cell-font-size, @cell-font-size);
+    //       color: var(--cell-required-color, @cell-required-color);
+    //     }
+    //   }
+    // }
   }
 
   &--center {

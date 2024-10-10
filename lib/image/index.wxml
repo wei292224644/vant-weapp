@@ -8,7 +8,7 @@
 >
   <image
     wx:if="{{ !error }}"
-    src="{{ src }}"
+    src="{{ imageSrc }}"
     mode="{{ computed.mode(fit) }}"
     lazy-load="{{ lazyLoad }}"
     webp="{{ webp }}"

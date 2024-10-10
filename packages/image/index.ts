@@ -9,11 +9,12 @@ VantComponent({
   props: {
     src: {
       type: String,
-      observer() {
+      observer(src) {
         this.setData({
           error: false,
           loading: true,
         });
+        this.changeImageSrc(src);
       },
     },
     round: Boolean,
@@ -24,6 +25,7 @@ VantComponent({
     useErrorSlot: Boolean,
     useLoadingSlot: Boolean,
     showMenuByLongpress: Boolean,
+    useGlobalPrefix: Boolean,
     fit: {
       type: String,
       value: 'fill',
@@ -43,6 +45,7 @@ VantComponent({
   },
 
   data: {
+    imageSrc: "",
     error: false,
     loading: true,
     viewStyle: '',
@@ -50,6 +53,8 @@ VantComponent({
 
   methods: {
     onLoad(event) {
+
+
       this.setData({
         loading: false,
       });
@@ -64,6 +69,25 @@ VantComponent({
       });
 
       this.$emit('error', event.detail);
+    },
+
+    changeImageSrc(src) {
+      if (this.data.useGlobalPrefix) {
+        const app = getApp();
+        if (app.globalData?.imagePrefix) {
+          this.setData({
+            imageSrc: app.globalData?.imagePrefix + src
+          })
+        } else {
+          this.setData({
+            imageSrc: src
+          })
+        }
+      } else {
+        this.setData({
+          imageSrc: src
+        })
+      }
     },
 
     onClick(event) {

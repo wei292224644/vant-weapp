@@ -53,6 +53,10 @@ VantComponent({
             type: Boolean,
             value: true,
         },
+        showInput: {
+            type: Boolean,
+            value: true,
+        },
         disablePlus: Boolean,
         disableMinus: Boolean,
         longPress: {

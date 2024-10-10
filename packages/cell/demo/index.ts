@@ -1,5 +1,10 @@
 import { VantComponent } from '../../common/component';
 
 VantComponent({
-  data: {},
+  data: {
+    datas: []
+  },
+  methods: {
+  
+  }
 });
