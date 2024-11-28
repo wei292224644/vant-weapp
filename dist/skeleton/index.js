@@ -9,6 +9,10 @@ VantComponent({
                 this.setData({ rowArray: Array.from({ length: value }) });
             },
         },
+        isCustomNavigation: {
+            type: Boolean,
+            value: false
+        },
         title: Boolean,
         avatar: Boolean,
         loading: {
@@ -42,5 +46,14 @@ VantComponent({
     data: {
         isArray: false,
         rowArray: [],
+        navHeight: 0,
+    },
+    created() {
+        if (!this.data.isCustomNavigation)
+            return;
+        const custom = wx.getMenuButtonBoundingClientRect();
+        this.setData({
+            navHeight: custom.height + custom.top
+        });
     },
 });
